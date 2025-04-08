@@ -1,34 +1,36 @@
-// ui/theme/Color.kt
+@file:Suppress("unused")
+
 package xyz.coderes.o2test.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Common
-val White = Color(0xFFFFFFFF)
-val Black = Color(0xFF000000)
+object AppColors {
 
-val Gray300 = Color(0xFFC9C9CE)
-val Gray500 = Color(0xFF8C8C9A)
-val Gray950 = Color(0xFF2C2C31)
+    object Content {
+        val OnNeutralLow = Color(0xFFC9C9CE)     // core/gray/300
+        val OnNeutralMedium = Color(0xFF8C8C9A)  // core/gray/500
+        val OnNeutralXxHigh = Color(0xFF2C2C31)  // core/gray/950
+        val OnNeutralDanger = Color(0xFFDC2828)  // core/red/600
+        val OnNeutralWarning = Color(0xFFA56315) // core/yellow/700
+    }
 
-// Primary/Accent
-val Blue500 = Color(0xFF0050FF)
-val Red600 = Color(0xFFDC2828)
-val Yellow700 = Color(0xFFA56315)
+    object Surface {
+        val XLow = Color(0xFFFFFFFF)             // core/gray/00
+        val XHigh = Color(0xFF2C2C31)            // assuming reuse
+        val Brand = Color(0xFF0050FF)            // o2/blue/500
+        val Danger = Color(0xFFDC2828)           // core/red/600
+        val Warning = Color(0xFFA56315)          // core/yellow/700
+        val DangerVariant = Color(0xFFFFDCDC)    // core/red/100
+        val WarningVariant = Color(0xFFFAF1B6)   // core/yellow/100
+    }
 
-// Backgrounds
-val Red100 = Color(0xFFFFDCDC)
-val Yellow100 = Color(0xFFFAF1B6)
+    object State {
+        val Focus = Color(0x1A1A1ACC)  // 80% black
+        val Hover = Color(0x1A1A1A0F)  // 6% black
+    }
 
-// statuses
-val OnDanger = Color(0xFFDC2828)
-val OnWarning = Color(0xFFA56315)
-
-// Some dims
-val Dim800 = Color(0xCC1A1A1A) // 80% black
-val Dim50 = Color(0x0F1A1A1A)  // 6% black
-
-// Added some colors for dark theme - not sure about the color palette
-val DarkBackground = Color(0xFF121212)
-val DarkSurface = Color(0xFF1E1E1E)
-val DarkOnSurface = Color(0xFFE1E1E1)
+    object Alpha {
+        val Dim800 = Color(0xCC1A1A1A) // parsed from 80%
+        val Dim50 = Color(0x0F1A1A1A)  // parsed from 6%
+    }
+}

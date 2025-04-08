@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">o2test</string>
+    <string name="toggle_password_visibility">Toggle password visibility</string>
+    <string name="optional">Optional</string>
+    <string name="requirements_at_least_8_characters">At least 8 characters</string>
+    <string name="requirements_at_least_one_uppercase_letter">At least one uppercase letter</string>
+    <string name="requirements_at_least_one_number">At least one number</string>
+    <string name="requirements_at_least_one_special_character">At least one special character (? = # / %)</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
 </resources>

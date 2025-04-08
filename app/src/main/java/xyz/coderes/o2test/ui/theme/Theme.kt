@@ -3,7 +3,6 @@ package xyz.coderes.o2test.ui.theme
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
@@ -12,29 +11,34 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.platform.LocalContext
 
-private val LightColorScheme = lightColorScheme(
-    primary = Blue500,
-    onPrimary = White,
-    background = White,
-    surface = White,
-    onSurface = Gray950,
-    error = Red600,
-    onError = White,
-    secondary = Yellow700,
-    onSecondary = Gray950
+val LightColorScheme = lightColorScheme(
+    primary = AppColors.Surface.Brand,
+    onPrimary = AppColors.Content.OnNeutralLow,
+    background = AppColors.Surface.XLow,
+    onBackground = AppColors.Content.OnNeutralXxHigh,
+    surface = AppColors.Surface.XLow,
+    onSurface = AppColors.Content.OnNeutralMedium,
+    error = AppColors.Surface.Danger,
+    onError = AppColors.Content.OnNeutralDanger,
+    primaryContainer = AppColors.Surface.Brand,
+    onPrimaryContainer = AppColors.Content.OnNeutralXxHigh,
+    inversePrimary = AppColors.Content.OnNeutralMedium
 )
 
-private val DarkColorScheme = darkColorScheme(
-    primary = Blue500,
-    onPrimary = White,
-    background = DarkBackground,
-    surface = DarkSurface,
-    onSurface = DarkOnSurface,
-    error = Red600,
-    onError = White,
-    secondary = Yellow700,
-    onSecondary = White
+val DarkColorScheme = darkColorScheme(
+    primary = AppColors.Surface.Brand,
+    onPrimary = AppColors.Content.OnNeutralLow,
+    background = AppColors.Surface.XHigh,
+    onBackground = AppColors.Content.OnNeutralLow,
+    surface = AppColors.Surface.XHigh,
+    onSurface = AppColors.Content.OnNeutralMedium,
+    error = AppColors.Surface.Danger,
+    onError = AppColors.Content.OnNeutralDanger,
+    primaryContainer = AppColors.Surface.Brand,
+    onPrimaryContainer = AppColors.Content.OnNeutralLow,
+    inversePrimary = AppColors.Content.OnNeutralMedium
 )
+
 
 @Composable
 fun O2testTheme(
@@ -55,11 +59,11 @@ fun O2testTheme(
     CompositionLocalProvider(
         LocalSpacing provides AppSpacing(),
         LocalShapes provides AppShapes(),
-        LocalTypography provides AppTypography
+        LocalTypography provides AppTypography,
     ) {
         MaterialTheme(
             colorScheme = colorScheme,
-            typography = AppTypography,
+            typography = MaterialTheme.typography,
             content = content
         )
     }

@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package xyz.coderes.o2test.ui.theme
 
 import androidx.compose.runtime.staticCompositionLocalOf

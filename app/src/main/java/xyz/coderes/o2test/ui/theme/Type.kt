@@ -56,7 +56,7 @@ val AppTypography = Typography(
         fontSize = 14.sp,
         lineHeight = 17.sp,
         letterSpacing = 0.16.em
-    )
+    ),
 )
 
 val LocalTypography = staticCompositionLocalOf { AppTypography }
