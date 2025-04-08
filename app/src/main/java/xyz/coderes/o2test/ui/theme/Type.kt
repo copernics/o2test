@@ -1,6 +1,7 @@
 package xyz.coderes.o2test.ui.theme
 
 import androidx.compose.material3.Typography
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -57,3 +58,6 @@ val AppTypography = Typography(
         letterSpacing = 0.16.em
     )
 )
+
+val LocalTypography = staticCompositionLocalOf { AppTypography }
+
