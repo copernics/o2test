@@ -21,10 +21,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import xyz.coderes.o2test.ui.component.password_view.PasswordInput
-import xyz.coderes.o2test.ui.component.password_view.PasswordInputIntent
-import xyz.coderes.o2test.ui.component.password_view.PasswordInputState
-import xyz.coderes.o2test.ui.component.password_view.PasswordViewState
-import xyz.coderes.o2test.ui.component.password_view.validatePassword
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordInputIntent
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordInputState
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordViewState
+import xyz.coderes.o2test.ui.component.password_view.model.validatePassword
 import xyz.coderes.o2test.ui.theme.O2testTheme
 
 class MainActivity : ComponentActivity() {

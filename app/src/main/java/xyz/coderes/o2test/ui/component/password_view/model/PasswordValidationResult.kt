@@ -1,7 +1,8 @@
-package xyz.coderes.o2test.ui.component.password_view
+package xyz.coderes.o2test.ui.component.password_view.model
 
 import androidx.annotation.StringRes
 import xyz.coderes.o2test.R
+import xyz.coderes.o2test.ui.component.password_view.defaultPasswordRules
 
 fun validatePassword(
     password: String,

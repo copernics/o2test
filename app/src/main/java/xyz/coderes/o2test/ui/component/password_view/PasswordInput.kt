@@ -23,7 +23,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import xyz.coderes.o2test.ui.component.input_view.InputView
-import xyz.coderes.o2test.ui.component.input_view.InputViewIntent
+import xyz.coderes.o2test.ui.component.input_view.model.InputViewIntent
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordInputIntent
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordInputState
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordValidationResult
+import xyz.coderes.o2test.ui.component.password_view.model.PasswordViewState
+import xyz.coderes.o2test.ui.component.password_view.model.ValidationType
+import xyz.coderes.o2test.ui.component.password_view.model.toInputViewState
 import xyz.coderes.o2test.ui.theme.AppColors
 import xyz.coderes.o2test.ui.theme.LocalTypography
 

@@ -1,5 +1,5 @@
-package xyz.coderes.o2test.ui.component.password_view
-import xyz.coderes.o2test.ui.component.input_view.InputViewState
+package xyz.coderes.o2test.ui.component.password_view.model
+import xyz.coderes.o2test.ui.component.input_view.model.InputViewState
 
 /**
  * Represents the state of the password input.

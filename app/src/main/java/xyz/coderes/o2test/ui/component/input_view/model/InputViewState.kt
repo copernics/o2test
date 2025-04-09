@@ -1,4 +1,4 @@
-package xyz.coderes.o2test.ui.component.input_view
+package xyz.coderes.o2test.ui.component.input_view.model
 
 /**
  * Represents the state of the input view.

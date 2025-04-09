@@ -1,4 +1,4 @@
-package xyz.coderes.o2test.ui.component.input_view
+package xyz.coderes.o2test.ui.component.input_view.model
 
 /**
  * Represents an intent that can be triggered by the password input view.

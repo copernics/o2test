@@ -28,6 +28,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import xyz.coderes.o2test.R
+import xyz.coderes.o2test.ui.component.input_view.model.InputViewIntent
+import xyz.coderes.o2test.ui.component.input_view.model.InputViewState
 import xyz.coderes.o2test.ui.theme.AppColors
 import xyz.coderes.o2test.ui.theme.LocalShapes
 import xyz.coderes.o2test.ui.theme.LocalTypography

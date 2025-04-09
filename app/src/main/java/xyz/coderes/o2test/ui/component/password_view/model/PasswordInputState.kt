@@ -1,4 +1,4 @@
-package xyz.coderes.o2test.ui.component.password_view
+package xyz.coderes.o2test.ui.component.password_view.model
 
 /**
  * Represents the state of the password input, including validation results.
